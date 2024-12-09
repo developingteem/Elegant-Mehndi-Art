@@ -8,7 +8,7 @@
 
   
   .hero {
-    background: url('./images/indian-4388167.jpg') no-repeat center center/cover;
+    background: url('indian-4388167.jpg') no-repeat center center/cover;
     color: white;
     padding: 50px 20px;
     text-align: center;
