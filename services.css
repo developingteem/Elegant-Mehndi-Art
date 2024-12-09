@@ -20,7 +20,7 @@ html, body {
 
 
 .hero {
-    background: url('./images/hands-5504603.jpg') no-repeat center center/cover;
+    background: url('hands-5504603.jpg') no-repeat center center/cover;
     color: rgb(247, 244, 244);
     padding: 50px 20px;
     text-align: center;
