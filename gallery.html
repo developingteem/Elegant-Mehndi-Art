@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improved Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header class="bg">
+    <h1>Customer Photos</h1>
+    <p>Click on an image to view it in full size or download it.</p>
+  </header>
+  <main>
+    <!-- Folder: Mehndi -->
+    <section class="gallery-folder">
+      <h2>Bridal Mehndi</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="./images/design2.jpg" alt="Mehndi Design 1" onclick="openLightbox(this)">
+          <div class="caption"> Bridal Mehndi Design 1</div>
+          <a href="mehndi/images/design2.jpg" download class="download-btn">Download</a>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/design2.jpg" alt="Mehndi Design 2" onclick="openLightbox(this)">
+          <div class="caption"> Bridal Mehndi Design 2</div>
+          <a href="mehndi/images/design2.jpeg" download class="download-btn">Download</a>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/design3.jpg" alt="Mehndi Design 3" onclick="openLightbox(this)">
+          <div class="caption"> Bridal Mehndi Design 3</div>
+          <a href="mehndi/images/design3.jpeg" download class="download-btn">Download</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Folder: mehndi 2 -->
+    <section class="gallery-folder">
+      <h2>Traditional Mehndi</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/images/design4.jpg" alt="Landscape 1" onclick="openLightbox(this)">
+          <div class="caption">Landscape 1</div>
+          <a href="landscapes/images/design4.jpg" download class="download-btn">Download</a>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/design3.jpg" alt="Landscape 2" onclick="openLightbox(this)">
+          <div class="caption">Landscape 2</div>
+          <a href="landscapes/images/design3.jpg" download class="download-btn">Download</a>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/design4.jpg" alt="Landscape 3" onclick="openLightbox(this)">
+          <div class="caption">Landscape 3</div>
+          <a href="landscapes/images/design4.jpg" download class="download-btn">Download</a>
+        </div>
+      </div>
+    </section>
+
+     <!-- Folder: mehndi 3 -->
+     <section class="gallery-folder">
+      <h2>Custom Mehndi</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/images/design3.jpg" alt="Landscape 1" onclick="openLightbox(this)">
+          <div class="caption">Landscape 1</div>
+          <a href="landscapes/images/design3.jpg" download class="download-btn">Download</a>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/design4.jpg" alt="Landscape 2" onclick="openLightbox(this)">
+          <div class="caption">Landscape 2</div>
+          <a href="landscapes/images/design4.jpg" download class="download-btn">Download</a>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/design3.jpg" alt="Landscape 3" onclick="openLightbox(this)">
+          <div class="caption">Landscape 3</div>
+          <a href="landscapes/images/design3.jpg" download class="download-btn">Download</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="#" alt="Full Size Image">
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

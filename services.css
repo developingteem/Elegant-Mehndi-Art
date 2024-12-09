@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element dimensions */
+}
+
+body, ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+
+
+.hero {
+    background: url('./images/hands-5504603.jpg') no-repeat center center/cover;
+    color: rgb(247, 244, 244);
+    padding: 50px 20px;
+    text-align: center;
+    
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #border {
+    margin:  auto; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 30px 50px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 600px; /* Limits the content width */
+  }
+
+
+/* Services Section */
+.services {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: rgb(198, 238, 238);
+}
+
+.services .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #a11717;
+}
+
+.services .section-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: rgb(198, 238, 238);
+}
+
+.service-card {
+    background: rgba(48, 159, 122, 0.231);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #a11717;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #a11717;
+}
+
+.service-card p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Footer */
+.footer {
+    
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #f1c40f;
+  }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+
+    .hero h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0.5em 0;
+        
+      }
+      
+      .hero p {
+        font-size: 1em;
+      }
+    .services .section-title {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h2 {
+        font-size: 1rem;
+    }
+
+    .service-card p {
+        font-size: 0.7rem;
+    }
+
+    .footer .container p {
+        font-size: 0.7rem;
+        padding: 2px;
+    }
+
+    .footer .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+}
+

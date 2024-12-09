@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Added a more modern font */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('./images/design1.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  border-bottom: 5px solid #56d273; /* Added a sleek border */
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  z-index: 1;
+}
+
+header h1, header p {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em; /* Increased font size */
+  font-weight: 700;
+  text-transform: uppercase; /* Added text transformation */
+  letter-spacing: 2px; /* Added spacing for elegance */
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.5em;
+}
+
+/* Gallery Section */
+.gallery-folder {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+}
+
+.gallery-folder h2 {
+  text-align: center;
+  color: #28a745;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 28%; /* Adjusted size for spacing */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1); /* Increased hover scale */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Added hover shadow */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.caption {
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+  background-color: #f8f9fa; /* Added a subtle background */
+  border-top: 1px solid #ddd;
+}
+
+.download-btn {
+  display: inline-block; /* Centered button style */
+  margin: 15px;
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+  transform: translateY(-3px); /* Added hover lift effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(52, 58, 64, 0.9);
+  color: #fff;
+  font-size: 1em;
+  border-top: 5px solid #28a745; /* Added a border for consistency */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Body Adjustments */
+  body {
+      font-size: 0.9em; /* Slightly reduce font size for better readability */
+  }
+
+  /* Header Section */
+  header {
+      padding: 40px 15px; /* Reduced padding */
+  }
+
+  header h1 {
+      font-size: 2.2em; /* Adjusted font size for smaller screens */
+  }
+
+  header p {
+      font-size: 1.2em; /* Reduced subtitle font size */
+  }
+
+  /* Gallery Section */
+  .gallery-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+  }
+
+  .gallery-item {
+      width: 90%; /* Full width for single-column display */
+  }
+
+  /* Button Adjustments */
+  .download-btn {
+      padding: 10px 15px; /* Adjusted padding */
+      font-size: 1em; /* Slightly smaller text */
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  header h1 {
+      font-size: 1.8em; /* Further reduced heading size */
+  }
+
+  header p {
+      font-size: 1em; /* Compact subtitle */
+  }
+
+  .gallery-item {
+      width: 100%; /* Full width on extra small screens */
+  }
+
+  .download-btn {
+      width: 80%; /* Make button stretch across the container */
+      text-align: center;
+  }
+
+  footer {
+      font-size: 0.9em; /* Smaller footer text */
+  }
+}
+

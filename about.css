@@ -1,0 +1,136 @@
+/* styles.css */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+  }
+
+  
+  .hero {
+    background: url('./images/indian-4388167.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.1em;
+    margin: 20px 0;
+  }
+  
+  .profile-image {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 20px;
+  }
+  
+  #border {
+    margin:  auto; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 30px 50px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 600px; /* Limits the content width */
+  }
+
+  .footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #f1c40f;
+  }
+  /* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* General Body Adjustments */
+  body {
+      font-size: 0.9em; /* Slightly smaller font for compact view */
+  }
+
+  /* Hero Section */
+  .hero {
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .hero h1 {
+      font-size: 1.5rem; /* Reduced heading size */
+  }
+
+  .hero p {
+      font-size: 1rem; /* Smaller font for better fit */
+  }
+
+  #border {
+      padding: 20px 30px; /* Less padding for compactness */
+      max-width: 70%; /* Ensure it fits within smaller screens */
+  }
+
+  /* About Section */
+  .about {
+      padding: 30px 15px; /* Reduced padding for mobile */
+  }
+
+  .about h2 {
+      font-size: 1.5em; /* Smaller heading for mobile */
+  }
+
+  .about p {
+      font-size: 1em; /* Compact paragraph text */
+  }
+
+  .profile-image {
+      width: 150px; /* Smaller profile image */
+  }
+
+  /* Footer Section */
+  .footer {
+      font-size: 0.8em; /* Adjust font size for compact layout */
+      padding: 15px 10px; /* Reduced padding for smaller viewports */
+  }
+
+  .footer .social-icons a {
+      font-size: 1.2em; /* Slightly smaller icons */
+  }
+}
