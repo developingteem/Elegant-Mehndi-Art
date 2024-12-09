@@ -10,7 +10,7 @@ body {
 header {
   text-align: center;
   padding: 60px 20px;
-  background: url('./images/design1.jpg') no-repeat center center;
+  background: url('design1.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
   position: relative;
