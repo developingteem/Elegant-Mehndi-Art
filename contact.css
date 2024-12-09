@@ -7,7 +7,7 @@ body {
   }
   
   header.contact-header {
-    background: url('./images/woman-5492072.jpg') no-repeat center center/cover;
+    background: url('woman-5492072.jpg') no-repeat center center/cover;
     color: white;
     padding: 50px 20px;
     text-align: center;
